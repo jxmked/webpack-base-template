@@ -57,10 +57,10 @@ Similar to `npm run eslint` but for stylesheet
 Automatically update your HTML contents by using this keys
 
 |       Key        |                Description                |
-| :--------------: | :---------------------------------------: | ----------- |
+| :--------------: | :---------------------------------------: |
 |     %TITLE%      |    Your project name from package.json    |
 |  %APP_VERSION%   |     Project version from package.json     |
-|    %APP_MODE%    |        Project mode. (development         | production) |
+|    %APP_MODE%    |        Project mode. (development | production) |
 |    %BASE_URL%    |    Project homepage from package.json     |
 |  %CURRENT_YEAR%  |     Year when project has been build      |
 |  %CURRENT_DATE%  |     Date when project has been build      |
