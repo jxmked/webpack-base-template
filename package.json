@@ -10,7 +10,7 @@
     "dev": "webpack --config webpack.config.mjs --mode development --devtool source-map --watch",
     "start": "npm run dev",
     "prettier-format": "prettier --config .prettierrc \"./src\" \"./types\" --write",
-    "prettier-format:md": "prettier --config .prettierrc \"./*.js\" --write",
+    "prettier-format:md": "prettier --config .prettierrc \"./*.((m|c)js|md)\" --write",
     "eslint": "eslint ./src/**/*.ts",
     "eslint:fix": "eslint ./src/**/*.ts --fix",
     "stylelint": "stylelint -c ./.stylelintrc src/**/*.scss",

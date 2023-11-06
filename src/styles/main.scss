@@ -13,25 +13,26 @@ body {
   height: 100vh;
   text-align: center;
   white-space: nowrap;
-  
-  > h3, > p {
+
+  > h3,
+  > p {
     color: colours.$aw-dl-gray-1;
   }
-  
+
   > h3 {
-    font-family: fonts.$primary-title ;
+    font-family: fonts.$primary-title;
   }
-  
+
   > p {
     white-space: normal;
     font-family: fonts.$primary-paragraph;
   }
-  
+
   > div {
     > span {
       color: colours.$aw-dl-gray-1;
-    font-family: fonts.$sub-title ;
-    font-weight: 800;
+      font-family: fonts.$sub-title;
+      font-weight: 800;
     }
   }
 }

@@ -13,16 +13,16 @@ import CopyPlugin from 'copy-webpack-plugin';
 import HTMLMinifier from 'html-minifier';
 
 /**
- * 
+ *
  * NOTE:
  * Search for "// REPLACE" to  check
  * all parameter that might require
  * to change per project.
- * 
+ *
  * NOTE:
- * Make sure that package.json does exists and 
+ * Make sure that package.json does exists and
  * has valid keys-values
- * 
+ *
  * Btw, this is my personal Webpack config.
  * Best for lazy like me.
  * */
@@ -62,7 +62,7 @@ const CONFIG = {
     src: path.resolve('src/assets/icon.png'),
     sizes: [96, 128, 256, 512]
   },
-  appType: "app"
+  appType: 'app'
 };
 
 /**
@@ -94,7 +94,7 @@ const prodPlugins = [
   }),
   new WebpackManifestPlugin({
     basePath: '',
-    
+
     // Replace with your repository name
     publicPath: 'webpack-base-template/', // REPLACE
     fileName: 'asset-manifest.json'
@@ -104,8 +104,7 @@ const prodPlugins = [
 /**
  * Handle App Repository Url
  * */
-const APP_REPOSITORY = packageJson.repository.url.replace(/^git\+/i, "");
-
+const APP_REPOSITORY = packageJson.repository.url.replace(/^git\+/i, '');
 
 export default function (env, config) {
   if (process.env['NODE' + '_ENV'] === void 0) {
@@ -125,11 +124,11 @@ export default function (env, config) {
   }
   const DateToday = new Date().toISOString().substring(0, 10);
   const current_year = new Date().getFullYear();
-  
+
   CONFIG.env.appName = CONFIG.appName;
   CONFIG.env.shortName = CONFIG.shortAppName;
   CONFIG.env.description = CONFIG.description;
-  
+
   return {
     entry: CONFIG.input.entry,
     module: {
@@ -182,10 +181,10 @@ export default function (env, config) {
           Object.entries(CONFIG.env).map((x) => [x[0], JSON.stringify(x[1])])
         )
       }),
-      
+
       // Use your own Google Measurement ID.
       // If you doesn't have one, please remove this plugin
-   
+
       // I will keep this here because I am pretty sure
       // I am the only who will use this WebpackConfig
       new GA4WebpackPlugin({
@@ -260,7 +259,8 @@ export default function (env, config) {
           },
           'og:image:url': {
             property: 'og:image:url',
-            content: // REPLACE
+            // REPLACE
+            content:
               'https://raw.githubusercontent.com/jxmked/resources/xio/assets/icons/light/Windows/Square310x310Logo.scale-400.png'
           },
           'og:image:width': {
@@ -317,7 +317,8 @@ export default function (env, config) {
           },
           'twitter:image': {
             name: 'twitter:image',
-            content: // REPLACE
+            // REPLACE
+            content:
               'https://raw.githubusercontent.com/jxmked/resources/xio/assets/icons/light/Windows/Square310x310Logo.scale-400.png'
           },
           'geo.country': {
@@ -356,7 +357,7 @@ export default function (env, config) {
         APP_REPOSITORY: APP_REPOSITORY,
         APP_TITLE_LENGTH: CONFIG.appName.length
       }),
-      
+
       new CopyPlugin({
         patterns: [
           {
@@ -364,7 +365,7 @@ export default function (env, config) {
             transform: {
               transformer(content, absoluteFrom) {
                 if (!absoluteFrom.endsWith('.html')) return content;
-             
+
                 content = new Buffer(content).toString('utf8');
 
                 const minified = HTMLMinifier.minify(content, {
@@ -386,4 +387,4 @@ export default function (env, config) {
       })
     ].concat(prodPlugins)
   };
-};
+}
