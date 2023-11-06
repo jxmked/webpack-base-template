@@ -1,0 +1,37 @@
+@use './vendor/normalize';
+@use './common';
+@use './abstracts/colours' as colours;
+@use './abstracts/fonts' as fonts;
+
+body {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  background-color: colours.$aw-dl-gray-6;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  white-space: nowrap;
+  
+  > h3, > p {
+    color: colours.$aw-dl-gray-1;
+  }
+  
+  > h3 {
+    font-family: fonts.$primary-title ;
+  }
+  
+  > p {
+    white-space: normal;
+    font-family: fonts.$primary-paragraph;
+  }
+  
+  > div {
+    > span {
+      color: colours.$aw-dl-gray-1;
+    font-family: fonts.$sub-title ;
+    font-weight: 800;
+    }
+  }
+}

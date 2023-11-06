@@ -1,0 +1,102 @@
+/**
+ * Colors source
+ * 
+ * https://developer.apple.com/design/human-interface-guidelines/color#Resources
+ * */
+
+/**
+ * iOS system colors
+ * */
+
+/** Default Light Colors **/
+$aw-dl-red: rgb(255 59 48 / var(--apple-webkit-opacity, 1));
+$aw-dl-orange: rgb(255 149 0 / var(--apple-webkit-opacity, 1));
+$aw-dl-yellow: rgb(255 204 0 / var(--apple-webkit-opacity, 1));
+$aw-dl-green: rgb(52 199 89 / var(--apple-webkit-opacity, 1));
+$aw-dl-mint: rgb(0 199 190 / var(--apple-webkit-opacity, 1));
+$aw-dl-teal: rgb(48 176 199 / var(--apple-webkit-opacity, 1));
+$aw-dl-cyan: rgb(50 173 230 / var(--apple-webkit-opacity, 1));
+$aw-dl-blue: rgb(0 122 255 / var(--apple-webkit-opacity, 1));
+$aw-dl-indigo: rgb(88 86 214 / var(--apple-webkit-opacity, 1));
+$aw-dl-purple: rgb(175 82 222 / var(--apple-webkit-opacity, 1));
+$aw-dl-pink: rgb(255 45 85 / var(--apple-webkit-opacity, 1));
+$aw-dl-brown: rgb(162 132 94 / var(--apple-webkit-opacity, 1));
+
+/** Default Dark Colors **/
+$aw-dd-red: rgb(255 69 58 / var(--apple-webkit-opacity, 1));
+$aw-dd-orange: rgb(255 159 10 / var(--apple-webkit-opacity, 1));
+$aw-dd-yellow: rgb(255 214 10 / var(--apple-webkit-opacity, 1));
+$aw-dd-green: rgb(48 209 88 / var(--apple-webkit-opacity, 1));
+$aw-dd-mint: rgb(99 230 226 / var(--apple-webkit-opacity, 1));
+$aw-dd-teal: rgb(64 200 224 / var(--apple-webkit-opacity, 1));
+$aw-dd-cyan: rgb(100 210 255 / var(--apple-webkit-opacity, 1));
+$aw-dd-blue: rgb(10 132 255 / var(--apple-webkit-opacity, 1));
+$aw-dd-indigo: rgb(94 92 230 / var(--apple-webkit-opacity, 1));
+$aw-dd-purple: rgb(191 90 242 / var(--apple-webkit-opacity, 1));
+$aw-dd-pink: rgb(255 55 95 / var(--apple-webkit-opacity, 1));
+$aw-dd-brown: rgb(172 142 104 / var(--apple-webkit-opacity, 1));
+
+/** Accessible Light Colors **/
+$aw-al-red: rgb(215 0 21 / var(--apple-webkit-opacity, 1));
+$aw-al-orange: rgb(201 52 0 / var(--apple-webkit-opacity, 1));
+$aw-al-yellow: rgb(178 80 0 / var(--apple-webkit-opacity, 1));
+$aw-al-green: rgb(36 138 61 / var(--apple-webkit-opacity, 1));
+$aw-al-mint: rgb(12 129 123 / var(--apple-webkit-opacity, 1));
+$aw-al-teal: rgb(0 130 153 / var(--apple-webkit-opacity, 1));
+$aw-al-cyan: rgb(0 113 164 / var(--apple-webkit-opacity, 1));
+$aw-al-blue: rgb(0 64 221 / var(--apple-webkit-opacity, 1));
+$aw-al-indigo: rgb(54 2 163 / var(--apple-webkit-opacity, 1));
+$aw-al-purple: rgb(137 68 171 / var(--apple-webkit-opacity, 1));
+$aw-al-pink: rgb(211 15 69 / var(--apple-webkit-opacity, 1));
+$aw-al-brown: rgb(127 101 69 / var(--apple-webkit-opacity, 1));
+
+/** Accessible Dark Colors **/
+$aw-ad-red: rgb(255 105 97 / var(--apple-webkit-opacity, 1));
+$aw-ad-orange: rgb(255 179 64 / var(--apple-webkit-opacity, 1));
+$aw-ad-yellow: rgb(255 212 38 / var(--apple-webkit-opacity, 1));
+$aw-ad-green: rgb(48 219 91 / var(--apple-webkit-opacity, 1));
+$aw-ad-mint: rgb(102 212 207 / var(--apple-webkit-opacity, 1));
+$aw-ad-teal: rgb(93 230 255 / var(--apple-webkit-opacity, 1));
+$aw-ad-cyan: rgb(112 215 255 / var(--apple-webkit-opacity, 1));
+$aw-ad-blue: rgb(64 156 255 / var(--apple-webkit-opacity, 1));
+$aw-ad-indigo: rgb(125 122 255 / var(--apple-webkit-opacity, 1));
+$aw-ad-purple: rgb(218 143 255 / var(--apple-webkit-opacity, 1));
+$aw-ad-pink: rgb(255 100 130 / var(--apple-webkit-opacity, 1));
+$aw-ad-brown: rgb(181 148 105 / var(--apple-webkit-opacity, 1));
+
+/** Apple System Gray **/
+
+/** Default Light System Gray **/
+$aw-dl-gray-1: rgb(142 142 147 / var(--apple-webkit-opacity, 1));
+$aw-dl-gray-2: rgb(174 174 178 / var(--apple-webkit-opacity, 1));
+$aw-dl-gray-3: rgb(199 199 204 / var(--apple-webkit-opacity, 1));
+$aw-dl-gray-4: rgb(209 209 214 / var(--apple-webkit-opacity, 1));
+$aw-dl-gray-5: rgb(229 229 234 / var(--apple-webkit-opacity, 1));
+$aw-dl-gray-6: rgb(242 242 247 / var(--apple-webkit-opacity, 1));
+
+/** Default Dark System Gray **/
+$aw-dd-gray-1: rgb(142 142 147 / var(--apple-webkit-opacity, 1));
+$aw-dd-gray-2: rgb(99 99 102 / var(--apple-webkit-opacity, 1));
+$aw-dd-gray-3: rgb(72 72 74 / var(--apple-webkit-opacity, 1));
+$aw-dd-gray-4: rgb(58 58 60 / var(--apple-webkit-opacity, 1));
+$aw-dd-gray-5: rgb(44 44 46 / var(--apple-webkit-opacity, 1));
+$aw-dd-gray-6: rgb(28 28 30 / var(--apple-webkit-opacity, 1));
+
+/** Accessible Light System Gray **/
+$aw-al-gray-1: rgb(108 108 112 / var(--apple-webkit-opacity, 1));
+$aw-al-gray-2: rgb(142 142 147 / var(--apple-webkit-opacity, 1));
+$aw-al-gray-3: rgb(174 174 178 / var(--apple-webkit-opacity, 1));
+$aw-al-gray-4: rgb(188 188 192 / var(--apple-webkit-opacity, 1));
+$aw-al-gray-5: rgb(216 216 220 / var(--apple-webkit-opacity, 1));
+$aw-al-gray-6: rgb(235 235 240 / var(--apple-webkit-opacity, 1));
+
+/** Accessible Dark System Gray **/
+$aw-ad-gray-1: rgb(174 174 178 / var(--apple-webkit-opacity, 1));
+$aw-ad-gray-2: rgb(124 124 128 / var(--apple-webkit-opacity, 1));
+$aw-ad-gray-3: rgb(84 84 86 / var(--apple-webkit-opacity, 1));
+$aw-ad-gray-4: rgb(68 68 70 / var(--apple-webkit-opacity, 1));
+$aw-ad-gray-5: rgb(54 54 56 / var(--apple-webkit-opacity, 1));
+$aw-ad-gray-6: rgb(36 36 38 / var(--apple-webkit-opacity, 1));
+
+$pure-white: rgb(255 255 255 / var(--apple-webkit-opacity));
+$pure-black: rgb(0 0 0 / var(--apple-webkit-opacity));

@@ -1,0 +1,9 @@
+@use './css-variables/fonts' as cssFonts;
+@use './css-variables/colors' as cssColors;
+@use './css-variables/utils' as cssUtils;
+
+:root {
+  @include cssFonts.fontinators;
+  @include cssColors.apple_webkit;
+  @include cssUtils.utils;
+}

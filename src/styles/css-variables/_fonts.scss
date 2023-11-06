@@ -1,0 +1,12 @@
+@mixin fontinators {
+  --font-eb-garamond: 'EB Garamond';
+  --font-montserrat: 'Montserrat';
+  --font-sans-serif: 'sans-serif';
+  --font-roboto: 'Roboto';
+  --font-times-new-roman: 'Times New Roman';
+  --font-source-code-pro: 'Source Code Pro';
+  --open-sans: 'Open Sans';
+  --font-primary-font-title: var(--open-sans, --font-roboto);
+  --font-primary-paragraph: var(--open-sans, --font-montserrat, --font-sans-serif);
+  --font-sub-title: var(--font-montserrat);
+}
