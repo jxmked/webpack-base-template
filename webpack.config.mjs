@@ -125,10 +125,15 @@ export default function (env, config) {
   const DateToday = new Date().toISOString().substring(0, 10);
   const current_year = new Date().getFullYear();
 
-  CONFIG.env.appName = CONFIG.appName;
-  CONFIG.env.shortName = CONFIG.shortAppName;
-  CONFIG.env.description = CONFIG.description;
-
+  CONFIG.env.APP_NAME = CONFIG.appName;
+  CONFIG.env.APP_SHORT_NAME = CONFIG.shortAppName;
+  CONFIG.env.APP_DESCRIPTION = CONFIG.description;
+  CONFIG.env.APP_HOMEPAGE = packageJson.homepage;
+  CONFIG.env.APP_REPOSITORY = APP_REPOSITORY;
+  CONFIG.env.AUTHOR = packageJson.author;
+  CONFIG.env.PROJECT_NAME = packageJson.name;
+  CONFIG.env.BUILD_DATE = DateToday;
+  
   return {
     entry: CONFIG.input.entry,
     module: {
