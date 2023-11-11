@@ -1,7 +1,7 @@
 {
   "name": "webpack-base-template",
   "description": "Personal Webpack Config",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "webpack.config.js",
   "type": "module",
   "scripts": {
